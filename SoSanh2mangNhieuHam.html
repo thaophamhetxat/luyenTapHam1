@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let p = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let c = prompt('tim kiếm');
+
+
+    function traodoi(tu) {
+        let dauRa = -1;
+        for(let i=0;i<p.length;i++){
+            if(tu ==p[i]){
+                 dauRa = i;
+            }
+        }
+        return dauRa;
+    }
+traodoi();
+    if(traodoi(c)== -1){
+        document.write('không có trong mảng');
+    }else {
+        document.write(b[traodoi(c)]);
+    }
+
+</script>
+</body>
+</html>
